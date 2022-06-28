@@ -6,13 +6,18 @@ const MainQuote = () => {
   const [quote, setQuote] = useState('')
 
   useEffect(() => {
-    getSingleQuote().then(data => setQuote(data[0]))
+    getNewQuote()
   }, [])
+
+  const getNewQuote = () => {
+    getSingleQuote().then(data => setQuote(data[0]))
+  }
 
   return (
     <div>
       <h2>"{quote}"</h2>
       <h3>Ron Swanson</h3>
+      <button onClick={getNewQuote}>Get Random Quote</button>
     </div>
   )
 }
