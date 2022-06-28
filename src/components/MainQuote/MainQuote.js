@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getSingleQuote } from '../../apiCalls';
+import Form from '../Form/Form';
 import './MainQuote.css';
 
 const MainQuote = () => {
@@ -17,7 +18,7 @@ const MainQuote = () => {
     <div>
       <h2>"{quote}"</h2>
       <h3>Ron Swanson</h3>
-      <button onClick={getNewQuote}>Get Random Quote</button>
+      <Form getNewQuote={getNewQuote} />
     </div>
   )
 }
