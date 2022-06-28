@@ -1,6 +1,6 @@
-import './LargeQuote.css';
+import './MainQuote.css';
 
-const LargeQuote = () => {
+const MainQuote = () => {
   return (
     <div>
       <h2>"Quote goes here..."</h2>
@@ -9,4 +9,4 @@ const LargeQuote = () => {
   )
 }
 
-export default LargeQuote;
+export default MainQuote;
