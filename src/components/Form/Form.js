@@ -5,7 +5,10 @@ const Form = ({ getNewQuote }) => {
 
   return (
     <form>
-      <input type='text' value={input} onChange={e => setInput(e.target.value)}/>
+      <div>
+        <input type='text' value={input} onChange={e => setInput(e.target.value)}/>
+        <button>Find Quotes</button>
+      </div>
       <button onClick={getNewQuote}>Get Random Quote</button>
     </form>
   )
