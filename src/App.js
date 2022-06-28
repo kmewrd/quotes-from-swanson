@@ -2,9 +2,9 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className="App">
-      
-    </div>
+    <main className="App">
+      <h1>Daily Wisdom from Ron Swanson</h1>
+    </main>
   );
 }
 
